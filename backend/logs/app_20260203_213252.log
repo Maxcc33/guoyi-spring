@@ -1,0 +1,111 @@
+2026-02-03 21:32:52,795 - main - INFO - === Logging system initialized ===
+2026-02-03 21:32:52,796 - main - INFO - Log file: logs/app_20260203_213252.log
+2026-02-03 21:32:52,796 - main - INFO - Log level: INFO
+2026-02-03 21:32:52,796 - main - INFO - Timestamp: 20260203_213252
+2026-02-03 21:32:54,060 - main - INFO - Included router: routers.aihub.router
+2026-02-03 21:32:54,083 - main - INFO - Included router: routers.auth.router
+2026-02-03 21:32:54,087 - main - INFO - Included router: routers.health.router
+2026-02-03 21:32:54,109 - main - INFO - Included router: routers.settings.router
+2026-02-03 21:32:54,151 - main - INFO - Included router: routers.storage.router
+2026-02-03 21:32:54,249 - main - INFO - Included router: routers.user.router
+2026-02-03 21:32:54,251 - main - INFO - === Application startup initiated ===
+2026-02-03 21:32:54,251 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-02-03 21:32:54,251 - services.database - INFO - 🔧 Starting database initialization...
+2026-02-03 21:32:54,252 - core.database - INFO - Starting database initialization...
+2026-02-03 21:32:54,252 - core.config - DEBUG - Read dynamic attribute database_url from environment variable DATABASE_URL
+2026-02-03 21:32:54,252 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-02-03 21:32:54,253 - core.database - INFO - Creating async database engine...
+2026-02-03 21:32:54,253 - core.database - INFO - Using QueuePool with connection pooling for non-Lambda environment
+2026-02-03 21:32:54,303 - core.database - INFO - Database engine created successfully
+2026-02-03 21:32:54,303 - core.database - INFO - Creating async session maker...
+2026-02-03 21:32:54,303 - core.database - INFO - Async session maker created successfully
+2026-02-03 21:32:54,303 - core.database - INFO - Database connection initialized successfully
+2026-02-03 21:32:54,303 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-02-03 21:32:54,303 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-02-03 21:32:54,304 - core.database - INFO - 🔧 Starting table creation...
+2026-02-03 21:32:55,542 - core.database - INFO - Tables initialized successfully
+2026-02-03 21:32:55,542 - core.database - DEBUG - [DB_OP] Create tables completed in 1.2386s
+2026-02-03 21:32:55,601 - services.database - INFO - 🔧 Table creation completed
+2026-02-03 21:32:55,602 - services.database - INFO - Database initialized successfully
+2026-02-03 21:32:55,602 - services.database - DEBUG - [DB_OP] Database initialization completed in 1.3505s
+2026-02-03 21:32:55,603 - services.mock_data - INFO - mock_data directory not found, skipping mock initialization
+2026-02-03 21:32:55,603 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-02-03 21:32:55,603 - services.database - INFO - 🔧 Starting database initialization...
+2026-02-03 21:32:55,603 - core.database - INFO - Starting database initialization...
+2026-02-03 21:32:55,604 - core.database - INFO - Database already initialized
+2026-02-03 21:32:55,604 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-02-03 21:32:55,604 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-02-03 21:32:55,605 - core.database - INFO - Tables already initialized
+2026-02-03 21:32:55,605 - services.database - INFO - 🔧 Table creation completed
+2026-02-03 21:32:55,605 - services.database - INFO - Database initialized successfully
+2026-02-03 21:32:55,606 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.0028s
+2026-02-03 21:32:55,606 - core.config - DEBUG - Read dynamic attribute admin_user_id from environment variable ADMIN_USER_ID
+2026-02-03 21:32:55,606 - core.config - DEBUG - Read dynamic attribute admin_user_email from environment variable ADMIN_USER_EMAIL
+2026-02-03 21:32:56,025 - services.auth - DEBUG - Admin user 950471 already exists
+2026-02-03 21:32:56,085 - main - INFO - === Application startup completed successfully ===
+2026-02-03 21:33:01,040 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-02-03 21:33:01,041 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0007s
+2026-02-03 21:33:01,041 - routers.auth - INFO - [token/exchange] Received platform token exchange request
+2026-02-03 21:33:01,041 - core.config - DEBUG - Read dynamic attribute oidc_issuer_url from environment variable OIDC_ISSUER_URL
+2026-02-03 21:33:01,041 - routers.auth - DEBUG - [token/exchange] Verifying token with issuer: https://auth.atoms.dev/api/v1/oidc/platform/tokens/verify
+2026-02-03 21:33:02,532 - httpcore.connection - DEBUG - connect_tcp.started host='auth.atoms.dev' port=443 local_address=None timeout=5.0 socket_options=None
+2026-02-03 21:33:02,533 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-02-03 21:33:02,533 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0002s
+2026-02-03 21:33:02,533 - routers.auth - INFO - [token/exchange] Received platform token exchange request
+2026-02-03 21:33:02,533 - routers.auth - DEBUG - [token/exchange] Verifying token with issuer: https://auth.atoms.dev/api/v1/oidc/platform/tokens/verify
+2026-02-03 21:33:02,560 - httpcore.connection - DEBUG - connect_tcp.started host='auth.atoms.dev' port=443 local_address=None timeout=5.0 socket_options=None
+2026-02-03 21:33:02,563 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7fa32e4bb7c0>
+2026-02-03 21:33:02,563 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x7fa330fc0940> server_hostname='auth.atoms.dev' timeout=5.0
+2026-02-03 21:33:02,570 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7fa32e4b8070>
+2026-02-03 21:33:02,570 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-02-03 21:33:02,571 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-02-03 21:33:02,571 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-02-03 21:33:02,571 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-02-03 21:33:02,571 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-02-03 21:33:02,589 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 04 Feb 2026 05:33:02 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-response-time', b'0.001s'), (b'x-request-id', b'638b5462d08725f49f7b5a930ba77d0d'), (b'cf-cache-status', b'DYNAMIC'), (b'Content-Encoding', b'gzip'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9c87ca7b1bcd2973-LAX')])
+2026-02-03 21:33:02,590 - httpx - INFO - HTTP Request: POST https://auth.atoms.dev/api/v1/oidc/platform/tokens/verify "HTTP/1.1 200 OK"
+2026-02-03 21:33:02,590 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-02-03 21:33:02,591 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-02-03 21:33:02,591 - httpcore.http11 - DEBUG - response_closed.started
+2026-02-03 21:33:02,591 - httpcore.http11 - DEBUG - response_closed.complete
+2026-02-03 21:33:02,591 - httpcore.connection - DEBUG - close.started
+2026-02-03 21:33:02,592 - httpcore.connection - DEBUG - close.complete
+2026-02-03 21:33:02,592 - routers.auth - DEBUG - [token/exchange] Issuer response status: 200
+2026-02-03 21:33:02,592 - routers.auth - DEBUG - [token/exchange] Issuer response body: {'success': True, 'data': {'exp': 1772767511, 'user_id': 950471, 'email': '1926375372cgy@gmail.com', 'pv': 0}, 'message': 'Platform token verified', 'code': 0, 'timestamp': '2026-02-04T05:33:02.585609'}
+2026-02-03 21:33:02,592 - routers.auth - INFO - [token/exchange] Token verified, platform_user_id=950471, email=1926375372cgy@gmail.com
+2026-02-03 21:33:02,592 - routers.auth - INFO - [token/exchange] Admin user verified, issuing admin token without DB persistence
+2026-02-03 21:33:02,592 - routers.auth - DEBUG - [token/exchange] Admin user object for token issuance: id=950471, email=1926375372cgy@gmail.com, role=admin
+2026-02-03 21:33:02,593 - core.config - DEBUG - Read dynamic attribute jwt_expire_minutes from environment variable JWT_EXPIRE_MINUTES
+2026-02-03 21:33:02,593 - core.config - DEBUG - Read dynamic attribute jwt_secret_key from environment variable JWT_SECRET_KEY
+2026-02-03 21:33:02,593 - core.config - DEBUG - Read dynamic attribute jwt_algorithm from environment variable JWT_ALGORITHM
+2026-02-03 21:33:02,719 - core.auth - DEBUG - Authentication token created for user hash: f73410a3
+2026-02-03 21:33:02,719 - routers.auth - INFO - [token/exchange] Token issued successfully for user_id=950471, expires_at=2026-03-06 05:33:02.593292+00:00
+2026-02-03 21:33:02,720 - core.database - DEBUG - [DB_OP] Database session cleanup after 1.6803s
+2026-02-03 21:33:02,724 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7fa32e4e5690>
+2026-02-03 21:33:02,724 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x7fa32e016640> server_hostname='auth.atoms.dev' timeout=5.0
+2026-02-03 21:33:02,732 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.anyio.AnyIOStream object at 0x7fa32e4e49a0>
+2026-02-03 21:33:02,733 - httpcore.http11 - DEBUG - send_request_headers.started request=<Request [b'POST']>
+2026-02-03 21:33:02,734 - httpcore.http11 - DEBUG - send_request_headers.complete
+2026-02-03 21:33:02,734 - httpcore.http11 - DEBUG - send_request_body.started request=<Request [b'POST']>
+2026-02-03 21:33:02,734 - httpcore.http11 - DEBUG - send_request_body.complete
+2026-02-03 21:33:02,734 - httpcore.http11 - DEBUG - receive_response_headers.started request=<Request [b'POST']>
+2026-02-03 21:33:02,769 - httpcore.http11 - DEBUG - receive_response_headers.complete return_value=(b'HTTP/1.1', 200, b'OK', [(b'Date', b'Wed, 04 Feb 2026 05:33:02 GMT'), (b'Content-Type', b'application/json'), (b'Transfer-Encoding', b'chunked'), (b'Connection', b'keep-alive'), (b'x-response-time', b'0.002s'), (b'x-request-id', b'c01e49aa0bddece798d29a7214b7d9fe'), (b'cf-cache-status', b'DYNAMIC'), (b'Content-Encoding', b'gzip'), (b'Server', b'cloudflare'), (b'CF-RAY', b'9c87ca7c1aea33b0-LAX')])
+2026-02-03 21:33:02,770 - httpx - INFO - HTTP Request: POST https://auth.atoms.dev/api/v1/oidc/platform/tokens/verify "HTTP/1.1 200 OK"
+2026-02-03 21:33:02,771 - httpcore.http11 - DEBUG - receive_response_body.started request=<Request [b'POST']>
+2026-02-03 21:33:02,771 - httpcore.http11 - DEBUG - receive_response_body.complete
+2026-02-03 21:33:02,771 - httpcore.http11 - DEBUG - response_closed.started
+2026-02-03 21:33:02,772 - httpcore.http11 - DEBUG - response_closed.complete
+2026-02-03 21:33:02,772 - httpcore.connection - DEBUG - close.started
+2026-02-03 21:33:02,772 - httpcore.connection - DEBUG - close.complete
+2026-02-03 21:33:02,773 - routers.auth - DEBUG - [token/exchange] Issuer response status: 200
+2026-02-03 21:33:02,773 - routers.auth - DEBUG - [token/exchange] Issuer response body: {'success': True, 'data': {'exp': 1772767511, 'user_id': 950471, 'email': '1926375372cgy@gmail.com', 'pv': 0}, 'message': 'Platform token verified', 'code': 0, 'timestamp': '2026-02-04T05:33:02.765046'}
+2026-02-03 21:33:02,773 - routers.auth - INFO - [token/exchange] Token verified, platform_user_id=950471, email=1926375372cgy@gmail.com
+2026-02-03 21:33:02,774 - routers.auth - INFO - [token/exchange] Admin user verified, issuing admin token without DB persistence
+2026-02-03 21:33:02,774 - routers.auth - DEBUG - [token/exchange] Admin user object for token issuance: id=950471, email=1926375372cgy@gmail.com, role=admin
+2026-02-03 21:33:02,774 - core.auth - DEBUG - Authentication token created for user hash: f73410a3
+2026-02-03 21:33:02,775 - routers.auth - INFO - [token/exchange] Token issued successfully for user_id=950471, expires_at=2026-03-06 05:33:02.774559+00:00
+2026-02-03 21:33:02,775 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.2423s
+2026-02-03 21:37:41,481 - services.database - DEBUG - [DB_OP] Starting database close
+2026-02-03 21:37:41,544 - core.database - INFO - Database connection closed and engine disposed
+2026-02-03 21:37:41,544 - services.database - INFO - Database connections closed
+2026-02-03 21:37:41,545 - services.database - DEBUG - [DB_OP] Database close completed in 0.0641s
